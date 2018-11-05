@@ -1,0 +1,98 @@
+
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid text-center">
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+     
+    </div>
+    <div class="col-sm-8 text-left">
+
+      <h3>Employee Details</h3>
+      <hr />
+      <input type="button" value="Add" class="btn btn-primary" (click)="addEmp()" />
+      <div style="overflow:auto">
+        <table class="table table-bordered table-striped">
+          <thead>
+            <tr>
+              <td>Id</td>
+              <td>Name</td>
+              <td>Gender</td>
+              <td>DOB</td>
+              <td>DOJ</td>
+              <td>Salary</td>
+              <td></td>
+              <td></td>
+            </tr>
+          </thead>
+          <tbody>
+
+            <tr *ngFor="let emp of empList;let i=idx">
+              <ng-template [ngTemplateOutlet]="loadTemplate(emp)" [ngTemplateOutletContext]="{ $implicit: emp, idx: i }"></ng-template>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+      <div>{{statusMessage}}</div>
+
+      <!--The Html Template for Read-Only Rows-->
+      <ng-template #readOnlyTemplate let-emp>
+        <td>{{emp.Id}}</td>
+        <td>{{emp.name}}</td>
+        <td>{{emp.gender}}</td>
+        <td>{{emp.dob}}</td>
+        <td>{{emp.doj}}</td>
+        <td>{{emp.salary}}</td>
+        <td>
+          <input type="button" value="Edit" class="btn btn-default" (click)="editEmployee(emp)" />
+        </td>
+        <td>
+          <input type="button" value="Delete" (click)="deleteEmployee(emp)" class="btn btn-danger" />
+        </td>
+      </ng-template>
+      <!--Ends Here-->
+      <!--The Html Template for Editable Rows-->
+      <ng-template #editTemplate>
+        <td>
+          <input type="text" [(ngModel)]="selemp.Id" readonly disabled />
+        </td>
+        <td>
+          <input type="text" [(ngModel)]="selemp.name" />
+        </td>
+        <td>
+          <input type="text" [(ngModel)]="selemp.gender" />
+        </td>
+        <td>
+          <input type="text" [(ngModel)]="selemp.dob" />
+        </td>
+        <td>
+          <input type="text" [(ngModel)]="selemp.doj" />
+        </td>
+        <td>
+          <input type="text" [(ngModel)]="selemp.salary" />
+        </td>
+        <td>
+          <input type="button" value="Save" (click)="addOrUpdateEmployee()" class="btn btn-success" />
+        </td>
+        <td>
+          <input type="button" value="Cancel" (click)="cancel()" class="btn btn-warning" />
+        </td>
+
+      </ng-template>
+    </div>
+    <div class="col-sm-2 sidenav">
+     
+    </div>
+  </div>
+</div>
+
+

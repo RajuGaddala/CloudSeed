@@ -1,0 +1,17 @@
+C:\RG\Cloudseed\Dealer\BusinessLayer\bin\Debug\BusinessLayer.dll
+C:\RG\Cloudseed\Dealer\BusinessLayer\bin\Debug\BusinessLayer.pdb
+C:\RG\Cloudseed\Dealer\BusinessLayer\bin\Debug\DataAccessLayer.dll
+C:\RG\Cloudseed\Dealer\BusinessLayer\bin\Debug\System.Data.SQLite.dll
+C:\RG\Cloudseed\Dealer\BusinessLayer\bin\Debug\DataAccessLayer.pdb
+C:\RG\Cloudseed\Dealer\BusinessLayer\bin\Debug\DataAccessLayer.dll.config
+C:\RG\Cloudseed\Dealer\BusinessLayer\bin\Debug\System.Data.SQLite.xml
+C:\RG\Cloudseed\Dealer\BusinessLayer\bin\Debug\System.Data.SQLite.dll.config
+C:\RG\Cloudseed\Dealer\BusinessLayer\obj\Debug\BusinessLayer.csprojAssemblyReference.cache
+C:\RG\Cloudseed\Dealer\BusinessLayer\obj\Debug\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\RG\Cloudseed\Dealer\BusinessLayer\obj\Debug\BusinessLayer.csproj.CopyComplete
+C:\RG\Cloudseed\Dealer\BusinessLayer\obj\Debug\BusinessLayer.dll
+C:\RG\Cloudseed\Dealer\BusinessLayer\obj\Debug\BusinessLayer.pdb
+C:\RG\Cloudseed\Dealer\BusinessLayer\bin\Debug\System.Data.SQLite.EF6.dll
+C:\RG\Cloudseed\Dealer\BusinessLayer\bin\Debug\System.Data.SQLite.Linq.dll
+C:\RG\Cloudseed\Dealer\BusinessLayer\bin\Debug\EntityFramework.dll
+C:\RG\Cloudseed\Dealer\BusinessLayer\bin\Debug\EntityFramework.xml
